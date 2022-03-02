@@ -6,7 +6,7 @@
     </title>
 </head>
 <body>
-<h1>President guess by Lakshmi Prathyusha Bavanam</h1>
+<h1>President guess by Hari Kiran Aluri</h1>
 <h2>Getting input</h2>
 
 <form>
@@ -21,27 +21,10 @@
 
 
 <p id="result">This text will be replaced </p>
-<script> 
-
-function checkGuess(){
-    console.log("Getting form values")
-    name = document.getElementById("president_name").value
-    guess_name = document.getElementById("guess_president").value
-    confirmed = confirm("Are these the values? "+name+" and "+guess_name)
-    
-    correct = document.getElementById("result")
-    wrong= document.getElementById("result")
-    if(confirmed){
-        correct.innerHTML = "You got it right"
-    } else {
-        wrong.innerHTML = "Wrong President"
-    }
-}
-</script>
 
 <label>Image changes on click</label><br>
     <div class="container">
-        <img src="Avocet.jpg" class="rounded" id="image" alt="Avocet" style="height: 100px;width: 100px;" onclick="swapImage()">
+        <img src="Abyssinian_Woodpecker.jpg" class="rounded" id="image" alt="Avocet" style="height: 100px;width: 100px;" onclick="swapImage()">
     </div>
 
     <script>
@@ -49,15 +32,15 @@ function checkGuess(){
         function swapImage() {
             switch (useImage) {
                 case 1:
-                    document.getElementById("image").src = "Avocet.jpg";
+                    document.getElementById("image").src = "Abyssinian_Woodpecker.jpg";
                     useImage = 2;
                     break;
                 case 2:
-                    document.getElementById("image").src = "Gadwall.jpg";
+                    document.getElementById("image").src = "Lesser_Ground-robin.jpg";
                     useImage = 3;
                     break;
                 case 3:
-                    document.getElementById("image").src = "Ultramarine Flycatcher.jpg";
+                    document.getElementById("image").src = "Unicoloured_Blackbird.jpg";
                     useImage = 1;
                     break;
                 default:
